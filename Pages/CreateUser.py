@@ -44,10 +44,10 @@ class CreateUser:
         self.driver.find_element_by_id(self.user_name).send_keys("UnknownNewUser")
 
     def password(self):
-        self.driver.find_element_by_id(self.frst_pwd).send_keys("12")
+        self.driver.find_element_by_id(self.frst_pwd).send_keys("123456")
 
     def confirm_password(self):
-        self.driver.find_element_by_id(self.pwd_cnfrm).send_keys("12")
+        self.driver.find_element_by_id(self.pwd_cnfrm).send_keys("123456")
 
     def create_button(self):
         self.driver.find_element_by_xpath(self.clk_create_btn).click()
